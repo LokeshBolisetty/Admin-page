@@ -8,7 +8,7 @@ class AllBlogs extends Component {
     var returner = [];
 
     for (let i = 0; i < this.props.cards; i++) {
-      returner.push(<EachBlog index={i} key={i} />);
+      returner.push(<EachBlog index={i} key={i} token={this.props.token} />);
     }
     return <div>{returner}</div>;
   }

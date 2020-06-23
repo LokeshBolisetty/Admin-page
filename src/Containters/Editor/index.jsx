@@ -22,7 +22,8 @@ function Editor(props) {
           propName: "Title",
           value: newtitle,
         },
-      ]
+      ],
+      { headers: { Authorization: "Bearer " + props.token } }
     )
       .then((res) => {
         console.log(res);

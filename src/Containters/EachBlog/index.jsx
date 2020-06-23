@@ -40,8 +40,21 @@ class EachBlog extends Component {
       );
   }
   handledelete = () => {
-    axios.delete(API + this.state.blogs._id);
-    document.getElementById("Title").innerHTML = `Deleted succesfully`;
+    console.log(this.state.blogs._id);
+    axios
+      .delete(API + this.state.blogs._id, {
+        headers: {
+          Authorization: "Bearer " + this.props.token,
+        },
+      })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    alert("Deleted Successfully");
+    /*document.getElementById("Title").innerHTML = `Deleted succesfully`;
     /*alert(Title.value);
     alert("Blog deted succesfully. Refresh the page to see changes.");*/
   };
@@ -76,7 +89,7 @@ class EachBlog extends Component {
             >
               Edit
             </button>*/}
-            <EditModal data={this.state.blogs} />
+            <EditModal data={this.state.blogs} token={this.props.token} />
           </div>
         </div>
       </React.Fragment>

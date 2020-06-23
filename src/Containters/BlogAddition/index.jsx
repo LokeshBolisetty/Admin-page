@@ -39,14 +39,22 @@ class BlogAddition extends Component {
     let Content = document.getElementById("Content");
     let Image = document.getElementById("Image");
     axios
-      .post(API, {
-        Title: document.getElementById("Header").value,
-        Body: Content.value,
-        Image: Image.value,
+      .post(
+        API,
+        {
+          Title: document.getElementById("Header").value,
+          Body: Content.value,
+          Image: Image.value,
+        },
+        { headers: { Authorization: "Bearer " + this.props.token } }
+      )
+      .then((res) => {
+        console.log(res);
+        alert("Blog posted successfully. Refresh to see the changes.");
       })
-      .then((res) => console.log(res))
       .catch((err) => {
         console.log(err);
+        alert("Blog has not been posted. Try logging out and logging in again");
       });
     //alert(Title.value);
     //alert(Content.value);
@@ -54,15 +62,14 @@ class BlogAddition extends Component {
     Title.value = "";
     Content.value = "";
     Image.value = "";
-
-    alert("Blog posted successfully. Refresh to see the changes.");
   };
   render() {
     return (
       <React.Fragment>
+        <h3>Add a blog</h3>
         <form>
           <div className="form-group">
-            <label htmlFor="Header">Content</label>
+            <label htmlFor="Header">Title</label>
             <input
               type="text"
               className="form-control"
@@ -91,7 +98,7 @@ class BlogAddition extends Component {
         </form>
         <button
           type="button"
-          className="btn btn-primary"
+          className="btn btn-primary btn-sm"
           onClick={this.handleaddition}
           id="addtxt"
         >

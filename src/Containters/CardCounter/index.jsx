@@ -44,9 +44,9 @@ class CardCounter extends Component {
             <h1>Your Blogs</h1>
           </div>
           <div className="Cards">
-            <AllBlogs cards={this.state.cardCounter} />
+            <AllBlogs cards={this.state.cardCounter} token={this.props.token} />
           </div>
-          <BlogAddition />
+          <BlogAddition token={this.props.token} />
         </div>
       </React.Fragment>
     );
