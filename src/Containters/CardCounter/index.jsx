@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import AllBlogs from "../AllBlogs/index";
 import "./style.css";
+import BlogAddition from "../BlogAddition";
 const API = "https://authorwrites-blog-api.herokuapp.com/";
 /*import { render } from "@testing-library/react";*/
 class CardCounter extends Component {
@@ -38,13 +39,14 @@ class CardCounter extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>
+        <div className="container">
           <div className="text">
             <h1>Your Blogs</h1>
           </div>
           <div className="Cards">
             <AllBlogs cards={this.state.cardCounter} />
           </div>
+          <BlogAddition />
         </div>
       </React.Fragment>
     );

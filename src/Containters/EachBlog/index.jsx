@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./style.css";
 import CommentCounter from "../CommmentCouter/index";
+import Editor from "../Editor";
+import EditModal from "../Editor";
 
 const API = "https://authorwrites-blog-api.herokuapp.com/";
 
@@ -40,6 +42,9 @@ class EachBlog extends Component {
   }
   handledelete = () => {
     axios.delete(API + this.state.blogs._id);
+    document.getElementById("Title").innerHTML = `Deleted succesfully`;
+    /*alert(Title.value);
+    alert("Blog deted succesfully. Refresh the page to see changes.");*/
   };
   render() {
     return (
@@ -52,7 +57,7 @@ class EachBlog extends Component {
             loading="lazy"
           />*/}
           <div className="card-body my-2">
-            <h1>{this.state.blogs.Title}</h1>
+            <h1 id="Title">{this.state.blogs.Title}</h1>
             <p>Created on {this.state.blogs.Created}</p>
             <p>Last modified on {this.state.blogs.Updated}</p>
             <a className="btn btn-primary mx-4 my-2">
@@ -65,6 +70,14 @@ class EachBlog extends Component {
             >
               Delete
             </a>
+            {/*<button
+              type="button"
+              className="btn btn-secondary"
+              onClick={<EditModal data={this.state.blogs} />}
+            >
+              Edit
+            </button>*/}
+            <EditModal data={this.state.blogs} />
           </div>
         </div>
       </React.Fragment>

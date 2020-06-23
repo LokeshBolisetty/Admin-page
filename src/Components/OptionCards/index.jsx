@@ -8,7 +8,7 @@ class OptionCards extends Component {
     return (
       <React.Fragment>
         <div className="flex-container">
-          <div className="card-columns">
+          <div className="card-column">
             <div className="card my-2">
               <img
                 className="card-img-top"
