@@ -3,7 +3,6 @@ import axios from "axios";
 import "./style.css";
 
 const API = "https://authorwrites-blog-api.herokuapp.com/";
-var TitleObj = [];
 
 class BlogAddition extends Component {
   constructor(props) {
@@ -21,12 +20,12 @@ class BlogAddition extends Component {
       .get(API)
       .then((result) => {
         var res = JSON.parse(JSON.stringify(result));
-        console.log(res);
+        //        console.log(res);
         this.setState({
           count: res.data.count,
           isLoading: false,
         });
-        console.log(res);
+        //console.log(res);
       })
       .catch((error) =>
         this.setState({
@@ -49,8 +48,8 @@ class BlogAddition extends Component {
       .catch((err) => {
         console.log(err);
       });
-    alert(Title.value);
-    alert(Content.value);
+    //alert(Title.value);
+    //alert(Content.value);
 
     Title.value = "";
     Content.value = "";
@@ -69,12 +68,6 @@ class BlogAddition extends Component {
               className="form-control"
               id="Header"
               placeholder="Enter the Title of the blog"
-              onChange={(e) => {
-                console.log(e.target.value);
-                console.log(document.getElementById("Header").value);
-                console.log(document.getElementById("Content").value);
-                console.log(document.getElementById("Image").value);
-              }}
             />
           </div>
           <div className="form-group">
@@ -84,12 +77,6 @@ class BlogAddition extends Component {
               className="form-control"
               id="Content"
               placeholder="Enter the content of the blog"
-              onChange={(e) => {
-                console.log(e.target.value);
-                console.log(document.getElementById("Header").value);
-                console.log(document.getElementById("Content").value);
-                console.log(document.getElementById("Image").value);
-              }}
             />
           </div>
           <div className="form-group">
@@ -99,12 +86,6 @@ class BlogAddition extends Component {
               className="form-control"
               id="Image"
               placeholder="Enter the url of an image you want to feature"
-              onChange={(e) => {
-                console.log(e.target.value);
-                console.log(document.getElementById("Header").value);
-                console.log(document.getElementById("Content").value);
-                console.log(document.getElementById("Image").value);
-              }}
             />
           </div>
         </form>

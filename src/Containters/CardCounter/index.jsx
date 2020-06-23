@@ -21,13 +21,13 @@ class CardCounter extends Component {
       .get(API)
       .then((result) => {
         var res = JSON.parse(JSON.stringify(result));
-        console.log(res);
-        console.log(res.data.count);
+        //console.log(res);
+        //console.log(res.data.count);
         this.setState({
           cardCounter: res.data.count,
           isLoading: false,
         });
-        console.log(res);
+        //console.log(res);
       })
       .catch((error) =>
         this.setState({

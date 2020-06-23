@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./style.css";
 import CommentCounter from "../CommmentCouter/index";
-import Editor from "../Editor";
 import EditModal from "../Editor";
 
 const API = "https://authorwrites-blog-api.herokuapp.com/";
@@ -25,13 +24,13 @@ class EachBlog extends Component {
       .get(API)
       .then((result) => {
         var res = JSON.parse(JSON.stringify(result));
-        console.log(res);
-        console.log(res.data.notes[this.props.index]);
+        //   console.log(res);
+        //   console.log(res.data.notes[this.props.index]);
         this.setState({
           blogs: res.data.notes[this.props.index],
           isLoading: false,
         });
-        console.log(res);
+        //  console.log(res);
       })
       .catch((error) =>
         this.setState({

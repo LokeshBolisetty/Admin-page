@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.css";
-import AllBlog from "../../Containters/AllBlogs/index";
 
 class OptionCards extends Component {
   render() {
