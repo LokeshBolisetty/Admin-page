@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/LokeshBolisetty/AutthorWrites-Admin/static/css/main.cab58729.chunk.css",
+    "main.js": "/LokeshBolisetty/AutthorWrites-Admin/static/js/main.d27e469a.chunk.js",
+    "main.js.map": "/LokeshBolisetty/AutthorWrites-Admin/static/js/main.d27e469a.chunk.js.map",
+    "runtime-main.js": "/LokeshBolisetty/AutthorWrites-Admin/static/js/runtime-main.a76d74d8.js",
+    "runtime-main.js.map": "/LokeshBolisetty/AutthorWrites-Admin/static/js/runtime-main.a76d74d8.js.map",
+    "static/js/2.78c6c517.chunk.js": "/LokeshBolisetty/AutthorWrites-Admin/static/js/2.78c6c517.chunk.js",
+    "static/js/2.78c6c517.chunk.js.map": "/LokeshBolisetty/AutthorWrites-Admin/static/js/2.78c6c517.chunk.js.map",
+    "index.html": "/LokeshBolisetty/AutthorWrites-Admin/index.html",
+    "precache-manifest.33f208305445d33614a3516a62877000.js": "/LokeshBolisetty/AutthorWrites-Admin/precache-manifest.33f208305445d33614a3516a62877000.js",
+    "service-worker.js": "/LokeshBolisetty/AutthorWrites-Admin/service-worker.js",
+    "static/css/main.cab58729.chunk.css.map": "/LokeshBolisetty/AutthorWrites-Admin/static/css/main.cab58729.chunk.css.map",
+    "static/js/2.78c6c517.chunk.js.LICENSE.txt": "/LokeshBolisetty/AutthorWrites-Admin/static/js/2.78c6c517.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a76d74d8.js",
+    "static/js/2.78c6c517.chunk.js",
+    "static/css/main.cab58729.chunk.css",
+    "static/js/main.d27e469a.chunk.js"
+  ]
+}
