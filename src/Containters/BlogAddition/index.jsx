@@ -77,14 +77,13 @@ class BlogAddition extends Component {
               placeholder="Enter the Title of the blog"
             />
           </div>
-          <div className="form-group">
-            <label htmlFor="Content">Content</label>
-            <input
-              type="text"
-              className="form-control"
+          <div class="md-form">
+            <label htmlFor="Content">Material textarea</label>
+            <textarea
               id="Content"
-              placeholder="Enter the content of the blog"
-            />
+              class="md-textarea form-control"
+              rows="3"
+            ></textarea>
           </div>
           <div className="form-group">
             <label htmlFor="Image">Image</label>
