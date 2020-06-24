@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/LokeshBolisetty/AutthorWrites-Admin/static/css/main.cab58729.chunk.css",
-    "main.js": "/LokeshBolisetty/AutthorWrites-Admin/static/js/main.d27e469a.chunk.js",
-    "main.js.map": "/LokeshBolisetty/AutthorWrites-Admin/static/js/main.d27e469a.chunk.js.map",
-    "runtime-main.js": "/LokeshBolisetty/AutthorWrites-Admin/static/js/runtime-main.a76d74d8.js",
-    "runtime-main.js.map": "/LokeshBolisetty/AutthorWrites-Admin/static/js/runtime-main.a76d74d8.js.map",
-    "static/js/2.78c6c517.chunk.js": "/LokeshBolisetty/AutthorWrites-Admin/static/js/2.78c6c517.chunk.js",
-    "static/js/2.78c6c517.chunk.js.map": "/LokeshBolisetty/AutthorWrites-Admin/static/js/2.78c6c517.chunk.js.map",
-    "index.html": "/LokeshBolisetty/AutthorWrites-Admin/index.html",
-    "precache-manifest.33f208305445d33614a3516a62877000.js": "/LokeshBolisetty/AutthorWrites-Admin/precache-manifest.33f208305445d33614a3516a62877000.js",
-    "service-worker.js": "/LokeshBolisetty/AutthorWrites-Admin/service-worker.js",
-    "static/css/main.cab58729.chunk.css.map": "/LokeshBolisetty/AutthorWrites-Admin/static/css/main.cab58729.chunk.css.map",
-    "static/js/2.78c6c517.chunk.js.LICENSE.txt": "/LokeshBolisetty/AutthorWrites-Admin/static/js/2.78c6c517.chunk.js.LICENSE.txt"
+    "main.css": "/LokeshBolisetty/authorwrites-admin/static/css/main.cab58729.chunk.css",
+    "main.js": "/LokeshBolisetty/authorwrites-admin/static/js/main.4b3c4577.chunk.js",
+    "main.js.map": "/LokeshBolisetty/authorwrites-admin/static/js/main.4b3c4577.chunk.js.map",
+    "runtime-main.js": "/LokeshBolisetty/authorwrites-admin/static/js/runtime-main.b9628d05.js",
+    "runtime-main.js.map": "/LokeshBolisetty/authorwrites-admin/static/js/runtime-main.b9628d05.js.map",
+    "static/js/2.78c6c517.chunk.js": "/LokeshBolisetty/authorwrites-admin/static/js/2.78c6c517.chunk.js",
+    "static/js/2.78c6c517.chunk.js.map": "/LokeshBolisetty/authorwrites-admin/static/js/2.78c6c517.chunk.js.map",
+    "index.html": "/LokeshBolisetty/authorwrites-admin/index.html",
+    "precache-manifest.0591136b402bfbcbff8edc47b05abefd.js": "/LokeshBolisetty/authorwrites-admin/precache-manifest.0591136b402bfbcbff8edc47b05abefd.js",
+    "service-worker.js": "/LokeshBolisetty/authorwrites-admin/service-worker.js",
+    "static/css/main.cab58729.chunk.css.map": "/LokeshBolisetty/authorwrites-admin/static/css/main.cab58729.chunk.css.map",
+    "static/js/2.78c6c517.chunk.js.LICENSE.txt": "/LokeshBolisetty/authorwrites-admin/static/js/2.78c6c517.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a76d74d8.js",
+    "static/js/runtime-main.b9628d05.js",
     "static/js/2.78c6c517.chunk.js",
     "static/css/main.cab58729.chunk.css",
-    "static/js/main.d27e469a.chunk.js"
+    "static/js/main.4b3c4577.chunk.js"
   ]
 }
