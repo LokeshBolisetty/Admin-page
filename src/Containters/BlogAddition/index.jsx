@@ -78,11 +78,12 @@ class BlogAddition extends Component {
             />
           </div>
           <div class="md-form">
-            <label htmlFor="Content">Material textarea</label>
+            <label htmlFor="Content">Content</label>
             <textarea
               id="Content"
               class="md-textarea form-control"
               rows="3"
+              placeholder="Enter the content of the blog"
             ></textarea>
           </div>
           <div className="form-group">
